@@ -1,0 +1,333 @@
+<!doctype html>
+<!--
+  Hilfeseite Kontoauszughero — die Support-URL für den Store.
+
+  Quelle dieses Texts ist docs/SUPPORT.md; Änderungen gehören in BEIDE Dateien.
+  Wie die Datenschutzseite ist sie absichtlich eine einzige Datei: kein
+  Stylesheet, kein Skript, keine Schrift von einem CDN, kein Bild. Der Stil ist
+  wörtlich der aus privacy.html, damit die zwei Seiten eine sind.
+
+  Veröffentlicht im Repo CapederFL/kontoauszughero-legal auf GitHub Pages,
+  https://capederfl.github.io/kontoauszughero-legal/support.html — die relative Verlinkung auf privacy.html
+  funktioniert dort, weil beide Seiten im selben Verzeichnis liegen.
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Hilfe — Kontoauszughero</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --plane: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink2: #52514e;
+    --muted: #898781;
+    --line: #e4e2dc;
+    --accent: #1f5c4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --plane: #121211;
+      --surface: #191918;
+      --ink: #f4f3f0;
+      --ink2: #b9b7b1;
+      --muted: #8b8984;
+      --line: #2e2d2a;
+      --accent: #7fc4ad;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem 4rem;
+    background: var(--plane);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .25rem; letter-spacing: -0.01em; }
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.35;
+    margin: 2.5rem 0 .75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p, li { color: var(--ink2); }
+  p { margin: 0 0 1rem; }
+  strong { color: var(--ink); font-weight: 600; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .stand { color: var(--muted); font-size: .875rem; margin: 0 0 2rem; }
+  .lead { color: var(--ink); }
+  address {
+    font-style: normal;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .875rem 1rem;
+    margin: 0 0 1rem;
+    color: var(--ink2);
+  }
+  .kasten {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .875rem 1rem;
+    margin: 0 0 1rem;
+  }
+  .kasten p:last-child { margin-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .875em;
+  }
+  pre {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .875rem 1rem;
+    margin: 0 0 1rem;
+    overflow-x: auto;
+    font-size: .8125rem;
+    line-height: 1.5;
+    color: var(--ink2);
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Hilfe zu Kontoauszughero</h1>
+<p class="stand">Stand: 15. September 2026</p>
+
+<p class="lead">Kontoauszughero liest Kontoauszüge und Kartenabrechnungen
+<strong>auf dem iPhone</strong>, ordnet die Buchungen Kategorien zu und rechnet
+aus, wohin das Geld geht. Die Auszüge und alles, was daraus entsteht, bleiben
+auf dem Gerät.</p>
+
+<h2>Kontakt</h2>
+
+<address>
+  <strong><a href="mailto:capederpas@gmail.com">capederpas@gmail.com</a></strong>
+</address>
+
+<p>Es gibt kein Benutzerkonto und keinen Anmeldenamen — schreiben Sie einfach,
+was passiert ist.</p>
+
+<div class="kasten">
+  <p><strong>Bitte schicken Sie keine Kontoauszüge.</strong> Das ist ernst
+  gemeint und kein Formalismus. Die App ist so gebaut, dass Ihre Finanzdaten
+  niemanden ausser Ihnen erreichen; eine E-Mail mit einem Auszug im Anhang
+  würde genau das aushebeln, wofür es die App gibt.</p>
+</div>
+
+<p>Hilfreich ist stattdessen:</p>
+
+<ul>
+  <li>was Sie getan haben und was danach auf dem Schirm stand (ein Screenshot
+    ist in Ordnung — bitte die Beträge und Namen darauf unkenntlich machen),</li>
+  <li>der <strong>Name der Bank</strong> und ob es ein Kontoauszug oder eine
+    Kartenabrechnung war,</li>
+  <li>ob die Datei ein PDF, eine CSV-Datei oder ein Scan war,</li>
+  <li>welche Bewertung im Prüfschritt stand: «Bilanz bewiesen», «Gelesen, nicht
+    beweisbar», «Rückfrage offen» oder «Nicht lesbar».</li>
+</ul>
+
+<p>Am einfachsten geht das über die App selbst: bei einem gescheiterten oder
+unlesbaren Auszug steht im Prüfschritt der Link <strong>«Format melden»</strong>.
+Er legt einen kurzen technischen Bericht in die Zwischenablage — Institut,
+verwendeter Leser, Bewertung, Warncodes, Seitenzahl — und <strong>keinen
+einzigen Satz aus Ihrem Dokument, keinen Betrag, keine Kontonummer</strong>.
+Diesen Text in die E-Mail einfügen genügt.</p>
+
+<p>Wenn ein bestimmtes Format gar nicht gelesen wird, ist ein
+<strong>anonymisierter Musterauszug Ihrer Bank</strong> das Wertvollste — also
+einer mit erfundenen Namen und Beträgen, wie ihn viele Banken selbst als
+Beispiel veröffentlichen. Nie Ihr eigener.</p>
+
+<h2>Mein Auszug wird nicht gelesen. Wird meine Bank unterstützt?</h2>
+
+<p>Die App kennt keine Liste von Banken. Sie liest die Tabelle im Dokument und
+prüft anschliessend nach, ob die Buchungen mit den Saldi des Auszugs auf den
+Rappen aufgehen. Deshalb funktionieren auch Banken, die niemand vorher
+eingebaut hat — und deshalb kann es umgekehrt an einem einzelnen Dokument
+scheitern, obwohl dieselbe Bank sonst geht.</p>
+
+<p>Wenn es nicht klappt:</p>
+
+<ul>
+  <li><strong>Ist es ein echtes PDF oder ein Scan?</strong> Bei einem Scan
+    bietet die App «Mit Texterkennung erneut lesen» an; das dauert länger und
+    liest das Bild Zeile für Zeile.</li>
+  <li><strong>Gibt es einen CSV-Export?</strong> Im E-Banking heisst er oft
+    «Export», «Umsätze herunterladen» oder «CSV». Eine Tabelle ist für die App
+    leichter zu lesen als ein gestaltetes PDF.</li>
+  <li><strong>Ist das PDF passwortgeschützt?</strong> Dann fragt die App
+    danach; das Passwort bleibt auf dem Gerät.</li>
+</ul>
+
+<h2>Die App fragt mich etwas über meinen Auszug</h2>
+
+<p>Das ist Absicht. Manche Dokumente lassen mehr als eine Lesart zu — etwa ob
+eine Zahl eine Belastung oder eine Gutschrift ist. Statt zu raten, fragt die
+App und zeigt dazu die gedruckten Werte aus Ihrem Dokument, damit die Antwort
+ohne Fachwissen möglich ist. Eine falsch beantwortete Frage lässt sich im
+Prüfschritt über «Anders lesen» zurücknehmen.</p>
+
+<h2>Was bedeutet «Gelesen, nicht beweisbar»?</h2>
+
+<p>Die App hat die Tabelle verstanden, aber das Dokument enthält keine Saldi,
+an denen sie das Ergebnis nachrechnen kann. Die Zahlen sind wahrscheinlich
+richtig, nur eben nicht bewiesen — und die App sagt das, statt es zu
+verschweigen. Steht dort «Bilanz bewiesen», gehen die Buchungen mit den
+gedruckten Saldi auf den Rappen auf.</p>
+
+<h2>Alle Vorzeichen sind verkehrt</h2>
+
+<p>Das passiert, wenn eine Kartenabrechnung als Kontoauszug gelesen wurde oder
+umgekehrt. Im Prüfschritt vor dem Import lässt sich das über die Rückfrage
+umstellen. Ist der Auszug schon importiert: unter <strong>Daten</strong> den
+Auszug entfernen und noch einmal einlesen. Ihre gelernten Kategorien bleiben
+dabei erhalten.</p>
+
+<h2>Warum sehe ich nur drei Monate?</h2>
+
+<p>Ohne Hero zeigt die App ein Fenster von drei Kalendermonaten. Eingelesen
+wird trotzdem alles: die übrigen Monate liegen bereits auf dem Gerät und werden
+mit Hero sichtbar — es wird nichts neu eingelesen und nichts nachgeladen.</p>
+
+<h2>Ich habe Hero gekauft, sehe es aber nicht</h2>
+
+<p>Öffnen Sie das Hero-Blatt und tippen Sie <strong>«Käufe
+wiederherstellen»</strong>. Wichtig ist, dass dabei dieselbe Apple-ID
+angemeldet ist wie beim Kauf. Bei Family Sharing muss die Freigabe in den
+Einstellungen der kaufenden Person aktiv sein. Hero ist ein einmaliger Kauf,
+kein Abonnement.</p>
+
+<h2>Ich möchte Hero zurückgeben</h2>
+
+<p>Das entscheidet <strong>Apple</strong>, nicht der Entwickler: gekauft haben
+Sie bei Apple, und nur Apple kann erstatten. Der Weg ist
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> — mit
+derselben Apple-ID anmelden, den Kauf «Hero» auswählen, Grund angeben. Ein Wort
+an den Support hier beschleunigt nichts; es gibt keinen Knopf in der App, der es
+könnte.</p>
+
+<p>Was dabei mit Ihren Daten geschieht: <strong>nichts</strong>. Kein Auszug,
+keine Buchung und keine Regel wird gelöscht. Die App fällt lediglich in das
+Gratis-Fenster von drei Monaten zurück, das sie vor dem Kauf hatte — alles
+Übrige liegt weiter auf dem Gerät und wird wieder sichtbar, falls Sie Hero
+später doch kaufen. Bis Apple entschieden hat, bleibt Hero aktiv.</p>
+
+<h2>Neues iPhone — wie nehme ich meine Daten mit?</h2>
+
+<p>Unter <strong>Daten</strong> → <strong>«Sicherung erstellen»</strong>. Die
+App legt die Datei ins Teilen-Menü; Sie entscheiden, wohin sie geht. Auf dem
+neuen Gerät dann <strong>«Sicherung einlesen»</strong>. Die Datei enthält Ihre
+ganze Finanzgeschichte im Klartext — bewahren Sie sie so auf, wie Sie einen
+Kontoauszug aufbewahren würden.</p>
+
+<p>Ohne Sicherung ist die übliche Rückversicherung Ihr iCloud- oder
+Computer-Backup: die Datenbank liegt im App-Ordner und ist Teil dieses Backups.
+Die App selbst lädt nichts hoch.</p>
+
+<h2>Kann ich die Sicherung ohne die App lesen?</h2>
+
+<p><strong>Ja.</strong> Die Sicherung ist keine eigene Erfindung, sondern die
+Datenbank selbst: eine gewöhnliche <strong>SQLite-Datei</strong>,
+unverschlüsselt. Sie brauchen dafür weder Hero noch überhaupt ein iPhone.</p>
+
+<p>Öffnen lässt sie sich mit <strong>DB Browser for SQLite</strong> (gratis, für
+Mac, Windows und Linux), mit jedem Tabellenprogramm, das SQLite importiert, oder
+auf dem Mac mit dem <code>sqlite3</code>, das schon installiert ist:</p>
+
+<pre>sqlite3 sicherung.sqlite "SELECT booking_date, amount_cents/100.0,
+       description_raw FROM transactions ORDER BY booking_date"</pre>
+
+<p>Die Tabellen heissen <code>accounts</code>, <code>imports</code>,
+<code>transactions</code>, <code>rules</code> und ein paar weitere. Drei Dinge
+muss man dabei wissen: <strong>Beträge stehen in Rappen als ganze Zahl</strong>
+(<code>-8435</code> sind 84.35 Franken, die weggegangen sind), <strong>Daten
+stehen als ISO-Text</strong> (<code>2026-03-12</code>), und <strong>das
+Vorzeichen ist unseres</strong>: was das Konto verlässt, ist negativ — auch auf
+Kartenabrechnungen, wo der gedruckte Auszug auf Schulden rechnet. Wer selbst
+summiert, lässt Sammelbelastungen (<code>is_batch_parent = 1</code>) und eigene
+Umbuchungen (<code>is_transfer = 1</code>) weg, sonst zählt dasselbe Geld
+doppelt.</p>
+
+<p>Eine Beschreibung jeder einzelnen Spalte gibt es auf Anfrage an die Adresse
+oben.</p>
+
+<h2>Wie lösche ich alles?</h2>
+
+<p>Unter <strong>Daten</strong> → <strong>«Alle Daten löschen»</strong>. Danach
+ist die App wieder leer; der Kauf bleibt bestehen. Wer die App vom iPhone
+löscht, löscht die Daten ebenfalls — <strong>ohne Sicherung gibt es keinen Weg
+zurück</strong>.</p>
+
+<h2>Eine Buchung ist in der falschen Kategorie</h2>
+
+<p>Buchung antippen und die richtige Kategorie wählen. Daraus wird eine Regel
+für diesen Händler, die sofort für alle seine Buchungen gilt — und
+«Rückgängig» nimmt sie wieder zurück. Die gelernten Regeln stehen unter
+<strong>Buchungen</strong> → <strong>Mehr</strong> → <strong>Regeln</strong>
+und lassen sich dort einzeln entfernen.</p>
+
+<h2>Woher kommen die Kategorie-Vorschläge?</h2>
+
+<p>Aus dem Sprachmodell von Apple, das <strong>auf dem Gerät</strong> läuft
+(Apple Intelligence). Es sieht den Händlernamen, die Buchungsart und die
+Mitteilung — nie einen Betrag, ein Datum oder eine Kontonummer — und es
+schlägt nur vor: zugeordnet wird erst, wenn Sie tippen. Das braucht iOS 26 und
+ein Gerät mit Apple Intelligence; ohne das fehlt schlicht der Knopf, alles
+andere funktioniert unverändert.</p>
+
+<h2>Was passiert mit meinen Daten?</h2>
+
+<p>Nichts von Ihren Auszügen verlässt das Gerät. Es gibt kein Konto, keine
+Anmeldung, keine Analyse- oder Absturzberichte und keinen Server, auf den die
+App etwas hochlädt; das Einlesen und alle Auswertungen laufen im Flugmodus.</p>
+
+<p>Eine Verbindung nach aussen gibt es nur wegen des Kaufs: die App fragt beim
+Start und bei jeder Rückkehr aus dem Hintergrund beim Kaufdienst RevenueCat
+nach, ob Hero noch gilt. Dabei gehen eine anonyme Kauf-Id, Apples Quittung und
+die Angaben mit, die jeder Netzaufruf mitführt — IP-Adresse, Gerätemodell, iOS-
+und App-Version, die Gerätekennung des Anbieters (IDFV). <strong>Nichts aus
+Ihren Auszügen.</strong> Ausführlich in der
+<a href="privacy.html">Datenschutzerklärung</a>.</p>
+
+<h2>Voraussetzungen</h2>
+
+<ul>
+  <li>iPhone mit <strong>iOS 16.4</strong> oder neuer.</li>
+  <li>Für die Kategorie-Vorschläge zusätzlich <strong>iOS 26</strong> und ein
+    Gerät mit Apple Intelligence.</li>
+  <li>Für «Papierauszug scannen» eine Kamera. Alles andere geht ohne.</li>
+  <li>Kein Konto, keine Anmeldung, keine Internetverbindung — ausser für Kauf
+    und Kaufprüfung.</li>
+</ul>
+
+<footer>
+  <p>Kontoauszughero — Pascal Capeder, Liechtenstein.
+  <a href="privacy.html">Datenschutzerklärung</a></p>
+</footer>
+
+</main>
+</body>
+</html>
