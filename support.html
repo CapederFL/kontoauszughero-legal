@@ -114,7 +114,7 @@
 <main>
 
 <h1>Hilfe zu Kontoauszughero</h1>
-<p class="stand">Stand: 15. September 2026</p>
+<p class="stand">Stand: 29. September 2026</p>
 
 <p class="lead">Kontoauszughero liest Kontoauszüge und Kartenabrechnungen
 <strong>auf dem iPhone</strong>, ordnet die Buchungen Kategorien zu und rechnet
@@ -145,15 +145,17 @@ was passiert ist.</p>
   <li>der <strong>Name der Bank</strong> und ob es ein Kontoauszug oder eine
     Kartenabrechnung war,</li>
   <li>ob die Datei ein PDF, eine CSV-Datei oder ein Scan war,</li>
-  <li>welche Bewertung im Prüfschritt stand: «Bilanz bewiesen», «Gelesen, nicht
-    beweisbar», «Rückfrage offen» oder «Nicht lesbar».</li>
+  <li>welche Bewertung im Prüfschritt stand: «Bewiesen», «Gelesen, nicht
+    beweisbar», «Rückfrage nötig» oder «Nicht lesbar».</li>
 </ul>
 
 <p>Am einfachsten geht das über die App selbst: bei einem gescheiterten oder
 unlesbaren Auszug steht im Prüfschritt der Link <strong>«Format melden»</strong>.
-Er legt einen kurzen technischen Bericht in die Zwischenablage — Institut,
-verwendeter Leser, Bewertung, Warncodes, Seitenzahl — und <strong>keinen
-einzigen Satz aus Ihrem Dokument, keinen Betrag, keine Kontonummer</strong>.
+Er legt einen kurzen technischen Bericht in die Zwischenablage — bei «Nicht
+lesbar» Institut, verwendeter Leser, Bewertung, Quelle, Seitenzahl, Anzahl
+Buchungen und ungelesener Zeilen und Warncodes, bei «Nicht gelesen» nur die
+Fehlermeldung der App — und <strong>keinen einzigen Satz aus Ihrem Dokument,
+keinen Betrag, keine Kontonummer</strong>.
 Diesen Text in die E-Mail einfügen genügt.</p>
 
 <p>Wenn ein bestimmtes Format gar nicht gelesen wird, ist ein
@@ -173,8 +175,9 @@ scheitern, obwohl dieselbe Bank sonst geht.</p>
 
 <ul>
   <li><strong>Ist es ein echtes PDF oder ein Scan?</strong> Bei einem Scan
-    bietet die App «Mit Texterkennung erneut lesen» an; das dauert länger und
-    liest das Bild Zeile für Zeile.</li>
+    bietet die App «Mit Texterkennung versuchen» an, bei einem PDF mit
+    Textebene, das nicht als «Bewiesen» gelesen wurde, «Mit Texterkennung
+    erneut lesen». Das dauert länger und liest die Seite Zeile für Zeile.</li>
   <li><strong>Gibt es einen CSV-Export?</strong> Im E-Banking heisst er oft
     «Export», «Umsätze herunterladen» oder «CSV». Eine Tabelle ist für die App
     leichter zu lesen als ein gestaltetes PDF.</li>
@@ -192,19 +195,29 @@ Prüfschritt über «Anders lesen» zurücknehmen.</p>
 
 <h2>Was bedeutet «Gelesen, nicht beweisbar»?</h2>
 
-<p>Die App hat die Tabelle verstanden, aber das Dokument enthält keine Saldi,
-an denen sie das Ergebnis nachrechnen kann. Die Zahlen sind wahrscheinlich
+<p>Die App hat die Tabelle verstanden, kann das Ergebnis aber nicht beweisen.
+Meist enthält das Dokument keine Saldi, an denen sie nachrechnen kann. Bei
+einem gescannten Auszug — Papier mit der Kamera oder ein PDF ohne Textebene —
+steht es immer: Die Texterkennung kann eine Zahl falsch lesen, und die
+Rechnung geht trotzdem auf. Darum wird ein Scan nie als «Bewiesen» markiert;
+bitte Beträge und Daten mit dem Papier vergleichen. Meist sind die Zahlen
 richtig, nur eben nicht bewiesen — und die App sagt das, statt es zu
-verschweigen. Steht dort «Bilanz bewiesen», gehen die Buchungen mit den
-gedruckten Saldi auf den Rappen auf.</p>
+verschweigen. Steht bei «Bilanzprüfung» aber «Differenz», fehlt vermutlich eine
+Buchung oder wurde eine falsch gelesen: dann bitte vor dem Import mit dem
+Auszug vergleichen. Steht oben im Prüfschritt «Bewiesen», gehen die Buchungen
+mit den gedruckten Saldi auf den Rappen auf.</p>
 
 <h2>Alle Vorzeichen sind verkehrt</h2>
 
 <p>Das passiert, wenn eine Kartenabrechnung als Kontoauszug gelesen wurde oder
-umgekehrt. Im Prüfschritt vor dem Import lässt sich das über die Rückfrage
-umstellen. Ist der Auszug schon importiert: unter <strong>Daten</strong> den
-Auszug entfernen und noch einmal einlesen. Ihre gelernten Kategorien bleiben
-dabei erhalten.</p>
+umgekehrt. Hat die App gefragt, lässt sich die Antwort im Prüfschritt über
+«Anders lesen» zurücknehmen. Ist der Auszug schon importiert: unter
+<strong>Daten</strong> den Auszug entfernen, noch einmal einlesen und im
+Prüfschritt «Anders lesen» tippen. Ihre gelernten Kategorien bleiben dabei
+erhalten. Hat die App nicht gefragt, sondern die Lesart angenommen (Hinweis
+«Falls alle Vorzeichen verkehrt wirken, liegt es daran»), lässt sich das in
+dieser Version nicht umstellen — bitte schreiben Sie Bank und Hinweistext an
+die Adresse oben.</p>
 
 <h2>Warum sehe ich nur drei Monate?</h2>
 
@@ -220,6 +233,10 @@ angemeldet ist wie beim Kauf. Bei Family Sharing muss die Freigabe in den
 Einstellungen der kaufenden Person aktiv sein. Hero ist ein einmaliger Kauf,
 kein Abonnement.</p>
 
+<p>Einen Kauf, den Apple auf dem Gerät verzeichnet — aus der Familienfreigabe,
+eine später bestätigte Kaufanfrage, ein eingelöster Code —, erkennt die App
+auch von selbst beim nächsten Start.</p>
+
 <h2>Ich möchte Hero zurückgeben</h2>
 
 <p>Das entscheidet <strong>Apple</strong>, nicht der Entwickler: gekauft haben
@@ -230,10 +247,10 @@ an den Support hier beschleunigt nichts; es gibt keinen Knopf in der App, der es
 könnte.</p>
 
 <p>Was dabei mit Ihren Daten geschieht: <strong>nichts</strong>. Kein Auszug,
-keine Buchung und keine Regel wird gelöscht. Die App fällt lediglich in das
-Gratis-Fenster von drei Monaten zurück, das sie vor dem Kauf hatte — alles
-Übrige liegt weiter auf dem Gerät und wird wieder sichtbar, falls Sie Hero
-später doch kaufen. Bis Apple entschieden hat, bleibt Hero aktiv.</p>
+keine Buchung und keine Regel wird gelöscht. Die App fällt in das
+Gratis-Fenster von drei Monaten zurück, und der CSV-Export ist wieder Hero
+vorbehalten — alles Übrige liegt weiter auf dem Gerät und wird wieder sichtbar,
+falls Sie Hero später doch kaufen. Bis Apple entschieden hat, bleibt Hero aktiv.</p>
 
 <h2>Neues iPhone — wie nehme ich meine Daten mit?</h2>
 
@@ -246,6 +263,13 @@ Kontoauszug aufbewahren würden.</p>
 <p>Ohne Sicherung ist die übliche Rückversicherung Ihr iCloud- oder
 Computer-Backup: die Datenbank liegt im App-Ordner und ist Teil dieses Backups.
 Die App selbst lädt nichts hoch.</p>
+
+<h2>Zwei iPhones — lassen sich die Daten zusammenführen?</h2>
+
+<p>Heute nicht: lesen Sie alle Auszüge auf <strong>einem</strong> iPhone ein.
+Eine Sicherung, die Sie auf einem anderen Gerät einlesen,
+<strong>ersetzt</strong> dort, was schon liegt — sie wird nicht dazugezählt.
+Zusammenführen kommt mit einem Update.</p>
 
 <h2>Kann ich die Sicherung ohne die App lesen?</h2>
 
@@ -277,17 +301,20 @@ oben.</p>
 <h2>Wie lösche ich alles?</h2>
 
 <p>Unter <strong>Daten</strong> → <strong>«Alle Daten löschen»</strong>. Danach
-ist die App wieder leer; der Kauf bleibt bestehen. Wer die App vom iPhone
+ist die App wieder leer; der Kauf und eine eingeschaltete App-Sperre bleiben
+bestehen. Wer die App vom iPhone
 löscht, löscht die Daten ebenfalls — <strong>ohne Sicherung gibt es keinen Weg
 zurück</strong>.</p>
 
 <h2>Eine Buchung ist in der falschen Kategorie</h2>
 
-<p>Buchung antippen und die richtige Kategorie wählen. Daraus wird eine Regel
-für diesen Händler, die sofort für alle seine Buchungen gilt — und
-«Rückgängig» nimmt sie wieder zurück. Die gelernten Regeln stehen unter
-<strong>Buchungen</strong> → <strong>Mehr</strong> → <strong>Regeln</strong>
-und lassen sich dort einzeln entfernen.</p>
+<p>Buchung antippen, wählen, wie weit die Zuordnung reicht, und die richtige
+Kategorie tippen. Mit «Alle Buchungen von …» (vorgewählt) wird daraus eine
+Regel für diesen Händler, die sofort für seine Buchungen gilt, ausser für
+einzeln zugeordnete; mit «Nur diese Buchung» ändert sich nur diese eine.
+«Rückgängig» nimmt beides zurück. Die Regeln stehen unter
+<strong>Buchungen</strong> → <strong>Mehr</strong> → <strong>Gelernte
+Regeln</strong> und lassen sich dort einzeln entfernen.</p>
 
 <h2>Woher kommen die Kategorie-Vorschläge?</h2>
 
@@ -304,20 +331,26 @@ andere funktioniert unverändert.</p>
 Anmeldung, keine Analyse- oder Absturzberichte und keinen Server, auf den die
 App etwas hochlädt; das Einlesen und alle Auswertungen laufen im Flugmodus.</p>
 
-<p>Eine Verbindung nach aussen gibt es nur wegen des Kaufs: die App fragt beim
-Start und bei jeder Rückkehr aus dem Hintergrund beim Kaufdienst RevenueCat
-nach, ob Hero noch gilt. Dabei gehen eine anonyme Kauf-Id, Apples Quittung und
-die Angaben mit, die jeder Netzaufruf mitführt — IP-Adresse, Gerätemodell, iOS-
-und App-Version, die Gerätekennung des Anbieters (IDFV). <strong>Nichts aus
-Ihren Auszügen.</strong> Ausführlich in der
+<p>Eine Verbindung nach aussen gibt es nur wegen des Kaufs: erst wenn Sie das
+Hero-Blatt öffnen, fragt die App beim App Store nach dem Preis und beim
+Kaufdienst RevenueCat, ob Hero gilt — bis die App beendet wird, auch bei jeder
+Rückkehr aus dem Hintergrund. Ist Hero freigeschaltet oder über Ihre Apple-ID
+verfügbar — gekauft oder über die Familienfreigabe —, fragt sie schon beim
+Start, damit eine Rückerstattung ankommt. Mit jeder Anfrage an RevenueCat gehen
+eine anonyme Kauf-Id und die Angaben mit, die jeder Netzaufruf mitführt,
+darunter IP-Adresse, Gerätemodell, iOS- und App-Version, das Land Ihres
+App-Store-Kontos und die Gerätekennung des Anbieters (IDFV); Apples Quittung
+geht nur mit, wenn ein Kauf übermittelt wird — beim Kaufen, Wiederherstellen, Abgleichen oder Einlösen eines Codes und wenn iOS einen Kauf meldet, der ausserhalb der App geschah, etwa über die Familienfreigabe. <strong>Nichts aus Ihren Auszügen.</strong> Ohne Hero fragt ein
+Start niemanden, solange Sie das Hero-Blatt nicht öffnen. Ausführlich in der
 <a href="privacy.html">Datenschutzerklärung</a>.</p>
 
 <h2>Voraussetzungen</h2>
 
 <ul>
-  <li>iPhone mit <strong>iOS 16.4</strong> oder neuer.</li>
-  <li>Für die Kategorie-Vorschläge zusätzlich <strong>iOS 26</strong> und ein
-    Gerät mit Apple Intelligence.</li>
+  <li>iPhone oder iPad mit <strong>iOS bzw. iPadOS 16.4</strong> oder
+    neuer.</li>
+  <li>Für die Kategorie-Vorschläge zusätzlich <strong>iOS bzw. iPadOS
+    26</strong> und ein Gerät mit Apple Intelligence.</li>
   <li>Für «Papierauszug scannen» eine Kamera. Alles andere geht ohne.</li>
   <li>Kein Konto, keine Anmeldung, keine Internetverbindung — ausser für Kauf
     und Kaufprüfung.</li>

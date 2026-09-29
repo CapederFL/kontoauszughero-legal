@@ -99,7 +99,7 @@
 <main>
 
 <h1>Datenschutzerklärung Kontoauszughero</h1>
-<p class="stand">Stand: 15. September 2026</p>
+<p class="stand">Stand: 29. September 2026</p>
 
 <h2>Das Wichtigste zuerst</h2>
 
@@ -121,11 +121,14 @@ im Flugmodus.</p>
 
 <p>Eine Verbindung nach aussen gibt es nur wegen der Vollversion «Hero»: für den
 <strong>Kauf</strong> und für die Frage, ob er noch gilt. Diese Frage stellt die
-App beim Start und wenn Sie aus dem Hintergrund zu ihr zurückkehren — nicht
-erst, wenn Sie kaufen. Sie geht an Apple und an den Kaufdienst RevenueCat und
-trägt eine anonyme Kauf-Id, die Quittung von Apple und die technischen Angaben,
-die jeder Netzaufruf mitführt, darunter die Gerätekennung des Anbieters (IDFV).
-<strong>Nichts aus Ihren Auszügen</strong> ist dabei. Was genau übertragen wird
+App erst, wenn Sie das Hero-Blatt öffnen — danach, bis die App beendet wird,
+auch bei jeder Rückkehr aus dem Hintergrund. Ist Hero auf diesem Gerät
+freigeschaltet oder über Ihre Apple-ID verfügbar — gekauft oder über die
+Familienfreigabe —, stellt sie sie schon beim Start. Sonst erzeugt ein Start
+keine Verbindung. Die Frage geht an Apple und an den Kaufdienst RevenueCat und
+trägt eine anonyme Kauf-Id und die technischen Angaben, die jeder Netzaufruf
+mitführt, darunter die Gerätekennung des Anbieters (IDFV); die Quittung von Apple kommt nur dazu, wenn ein Kauf übermittelt wird — beim Kaufen, Wiederherstellen, Abgleichen oder Einlösen eines Codes und wenn iOS einen Kauf meldet, der ausserhalb der App geschah, etwa über die Familienfreigabe. <strong>Nichts aus Ihren Auszügen</strong>
+ist dabei. Was genau übertragen wird
 und wann, steht vollständig in Abschnitt 4.</p>
 
 <h2>1. Verantwortlicher</h2>
@@ -144,40 +147,47 @@ Datenschutzgesetzes und des schweizerischen Datenschutzgesetzes
 Art. 37 DSGVO liegen bei einem Einzelentwickler ohne umfangreiche
 Datenverarbeitung nicht vor. Ebenso ist <strong>kein Vertreter in der Schweiz
 nach Art. 14 DSG</strong> bestellt: die App bearbeitet keine Personendaten von
-Personen in der Schweiz in umfangreicher Weise, die Bearbeitung ist weder
-regelmässig noch mit einem hohen Risiko verbunden — sie besteht aus dem
-Kaufdatensatz nach Abschnitt 4, alles Übrige bleibt auf dem Gerät des
-Nutzers.</p>
+Personen in der Schweiz in umfangreicher Weise, und die Bearbeitung bringt
+kein hohes Risiko mit sich — sie besteht aus dem Kaufdatensatz nach
+Abschnitt 4 und E-Mails an den Support (Abschnitt 9), alles Übrige bleibt auf
+dem Gerät des Nutzers.</p>
 
 <h2>2. Was die App auf dem Gerät verarbeitet</h2>
 
 <p>Diese Verarbeitung findet ausschliesslich lokal statt. Die Daten verlassen
 das Gerät nicht, und der Verantwortliche hat keinen Zugriff darauf.</p>
 
-<p><strong>Auszüge einlesen.</strong> Sie wählen eine PDF- oder CSV-Datei über
-die Dateiauswahl von iOS aus. iOS legt dabei eine <strong>Kopie</strong> der
-gewählten Datei im temporären Ordner der App ab; gelesen wird sie dort.
-Gespeichert werden anschliessend die <strong>gelesenen Buchungen</strong>, nicht
-die Originaldatei; die Kopie löscht die App, sobald der Prüfschritt
-abgeschlossen oder verworfen ist, und beim Start räumt sie weg, was ein Abbruch
-liegengelassen hat. Ist ein PDF passwortgeschützt, wird das eingegebene Passwort
-nur zum Öffnen des Dokuments verwendet und <strong>nicht gespeichert</strong>.</p>
+<p><strong>Auszüge einlesen.</strong> Sie wählen PDF- oder CSV-Dateien über die
+Dateiauswahl von iOS aus oder übergeben eine mit «In Kontoauszughero öffnen»
+aus Mail, Dateien oder AirDrop. iOS legt dabei eine <strong>Kopie</strong> der
+Datei an: bei der Dateiauswahl im temporären Ordner der App, bei «Öffnen»
+zuerst im Ordner Documents/Inbox, der zum iCloud- oder Computer-Backup gehört;
+von dort verschiebt die App sie sofort in den temporären Ordner. Gelesen wird
+sie dort. Gespeichert werden anschliessend die <strong>gelesenen
+Buchungen</strong>, nicht die Originaldatei; die Kopie löscht die App, sobald
+der Prüfschritt abgeschlossen oder verworfen ist, und beim Start räumt sie weg,
+was ein Abbruch liegengelassen hat, auch in Documents/Inbox. Ist ein PDF
+passwortgeschützt, wird das eingegebene Passwort nur zum Öffnen des Dokuments
+verwendet und <strong>nicht gespeichert</strong>.</p>
 
 <p><strong>Was gespeichert wird.</strong> Konten, Importe, Buchungen mit Datum,
-Betrag, Währung, Text, Händler und Kategorie, erkannte Umbuchungen, selbst
-gelernte Regeln, Vorschläge, Format-Gedächtnis und ein paar Merker (zuletzt
-bekannter Kaufstand, ob die Tour gesehen wurde). Alles in einer einzigen
-SQLite-Datei im App-Container des Geräts.</p>
+Betrag, Währung, Text, Händler, Kategorie und Ihrer eigenen Notiz, erkannte
+Umbuchungen, selbst gelernte Regeln, Vorschläge, Format-Gedächtnis und ein
+paar Merker (zuletzt bekannter Kaufstand, ob die Tour gesehen wurde, ob
+App-Sperre und Erinnerung eingeschaltet sind). Alles in einer SQLite-Datei im
+App-Container des Geräts; daneben liegt im selben Dokumentenordner nur eine
+kleine Datei mit dem letzten Fehler (Code, Zeitpunkt, Meldung ohne Ziffern),
+die unter «Daten» als «Letzter Fehler» erscheint.</p>
 
 <p><strong>Verschlüsselung.</strong> Die App fordert für alle Dateien, die sie
 schreibt, den iOS-Datenschutz «NSFileProtectionCompleteUnlessOpen» an. Das
 heisst: bei gesperrtem Gerät ist die Datenbank vom Betriebssystem verschlüsselt
 und lässt sich nicht öffnen — <strong>ausser sie war beim Sperren bereits
 offen</strong>; dann darf die App, die sie offen hält, weiterlesen und
-weiterschreiben, bis sie die Datei schliesst. Genau dafür gibt es diese
-Schutzklasse: sie erlaubt einen laufenden Import, der über das Sperren hinweg
-weiterläuft, ohne die Datei am gesperrten Gerät neu zugänglich zu machen. Der
-Schutz hängt an Ihrem Gerätecode: ein iPhone ohne Code hat auch hier keinen.</p>
+weiterschreiben, bis sie die Datei schliesst. Diese App hält die Datenbank
+offen, solange sie läuft, auch im Hintergrund; ganz geschützt ist die Datei
+erst, wenn die App beendet ist. Der Schutz hängt an Ihrem Gerätecode: ein Gerät
+ohne Code hat auch hier keinen.</p>
 
 <p><strong>Papierauszug scannen (Kamera).</strong> Auf Wunsch kann ein Auszug
 auf Papier mit der Dokumentenkamera aufgenommen werden. Die Aufnahme wird direkt auf dem Gerät mit
@@ -211,8 +221,9 @@ nach einem verlorenen Telefon ist es der Weg zurück zu den eigenen Daten.
 Ihren Einstellungen, gegenüber Apple und nicht gegenüber dem Entwickler.</p>
 
 <p><strong>Löschen.</strong> Unter «Daten» lassen sich einzelne Auszüge,
-einzelne Antworten, gelernte Formate oder der gesamte Bestand löschen. Wird die
-App vom Gerät gelöscht, verschwindet die Datenbank mit ihr. Eine ältere Kopie
+einzelne Antworten, gelernte Formate oder der gesamte Bestand löschen; die
+Datei mit dem letzten Fehler bleibt dabei liegen. Wird die App vom Gerät
+gelöscht, verschwinden die Datenbank und diese Datei mit ihr. Eine ältere Kopie
 kann noch in einem Geräte-Backup liegen, bis dieses überschrieben oder gelöscht
 wird — das liegt bei Ihnen und bei Apple, nicht bei der App.</p>
 
@@ -222,9 +233,17 @@ wird — das liegt bei Ihnen und bei Apple, nicht bei der App.</p>
   <li><strong>Kamera</strong> — nur für «Papierauszug scannen». Ohne diese Funktion
   wird nie danach gefragt. Der Zweck steht auch in der Abfrage von iOS
   selbst.</li>
-  <li><strong>Dateien</strong> — nur die eine Datei, die Sie in der Dateiauswahl
-  antippen. Die App durchsucht keine Ordner und hat keinen Zugriff auf andere
-  Dateien.</li>
+  <li><strong>Dateien</strong> — nur die Dateien, die Sie in der Dateiauswahl
+  antippen oder mit «In Kontoauszughero öffnen» übergeben. Die App durchsucht
+  keine Ordner und hat keinen Zugriff auf andere Dateien.</li>
+  <li><strong>Face ID, Touch ID oder Gerätecode</strong> — nur für die
+  App-Sperre, die Sie unter «Daten» selbst einschalten. Die Erkennung macht
+  iOS; die App erfährt nur, ob sie geklappt hat, und speichert keine
+  biometrischen Daten.</li>
+  <li><strong>Mitteilungen</strong> — nur für die Erinnerung an den nächsten
+  Auszug, die Sie unter «Daten» selbst einschalten. Sie wird auf dem Gerät
+  geplant; es gibt keine Push-Mitteilungen und keinen Server, und der Text nennt
+  weder Konto noch Betrag.</li>
 </ul>
 
 <p>Die App verlangt keinen Zugriff auf Kontakte, Standort, Fotos, Mikrofon,
@@ -248,19 +267,31 @@ Kundendaten, sondern zusammengefasste Verkaufsberichte.</p>
 oder in der Familienfreigabe wiederherzustellen. RevenueCat handelt dabei als
 Auftragsverarbeiter des Verantwortlichen.</p>
 
-<p><strong>Wann das geschieht — nicht nur beim Kauf.</strong> Die App richtet das
-SDK schon beim Start ein und fragt einmal den Kaufstand ab. Das SDK selbst fragt
-zusätzlich nach, sobald die App aus dem Hintergrund zurückkehrt. Ein Kaltstart
-erzeugt also einen Netzaufruf, auch wenn Sie nie etwas kaufen. Ist kein
-Kaufdienst konfiguriert — das ist in jeder Entwicklungsversion so —, findet
-keiner statt.</p>
+<p><strong>Wann das geschieht.</strong> Die App richtet das SDK erst ein, wenn Sie
+das Hero-Blatt öffnen, kaufen, einen Kauf wiederherstellen oder einen Code
+einlösen. Dabei fragt sie einmal den Kaufstand und den Preis ab. Von da an fragt
+das SDK zusätzlich nach, sobald die App aus dem Hintergrund zurückkehrt, bis die
+App beendet wird.</p>
+
+<p>Beim Start liest die App auf dem Gerät nach, ob Hero hier schon freigeschaltet
+ist und, wenn nicht, ob Apple für Ihre Apple-ID einen Kauf von Hero verzeichnet —
+gekauft, auch auf einem anderen Gerät, oder über die Familienfreigabe. Beides ist
+keine Verbindung. Trifft eines davon zu, schaltet die App Hero frei und richtet
+das SDK schon beim Start ein, damit eine Rückerstattung oder eine aufgehobene
+Familienfreigabe ankommt; von da an fragt das SDK auch bei jeder Rückkehr aus
+dem Hintergrund nach. Trifft keines zu, erzeugt ein Start keinen Netzaufruf,
+solange Sie das Hero-Blatt nicht öffnen. Ist kein Kaufdienst konfiguriert,
+findet keiner statt.</p>
 
 <p>Übermittelt werden dabei:</p>
 
 <ul>
   <li>eine <strong>anonyme Kauf-Id</strong>, die RevenueCat auf diesem Gerät
   erzeugt und dort behält — es wird bewusst keine eigene Kennung gesetzt;</li>
-  <li>die <strong>Kaufquittung von Apple</strong>, sobald es eine gibt;</li>
+  <li>die <strong>Kaufquittung von Apple</strong>, nur wenn ein Kauf übermittelt
+  wird — beim Kaufen, Wiederherstellen, Abgleichen oder Einlösen eines Codes und
+  wenn iOS einen Kauf meldet, der ausserhalb der App geschah (etwa über die
+  Familienfreigabe oder eine genehmigte Kaufanfrage);</li>
   <li>die <strong>Gerätekennung des Anbieters (IDFV)</strong> — die Kennung, die
   iOS allen Apps desselben Entwicklers für dasselbe Gerät gibt und die
   verschwindet, wenn Sie alle diese Apps löschen. Sie geht bei
@@ -269,7 +300,12 @@ keiner statt.</p>
   <strong>iOS-Version</strong>, <strong>App-Version und Build-Nummer</strong>,
   <strong>Bundle-Id</strong>, die bis zu <strong>drei bevorzugten
   Sprachen</strong> Ihres Geräts und die <strong>Storefront</strong>, also das
-  Land Ihres App-Store-Kontos.</li>
+  Land Ihres App-Store-Kontos;</li>
+  <li>der <strong>Status der App-Tracking-Freigabe</strong> von iOS (die App fragt nie danach, er lautet darum nie «erlaubt») — das
+  einzige Attribut, das das SDK von sich aus am Kaufdatensatz ablegt: mit jeder Übermittlung eines Kaufs und für sich allein, sobald die App nach
+  der ersten Anfrage zum ersten Mal inaktiv wird — beim Wechsel in den
+  Hintergrund oder wenn sich ein Fenster von iOS wie das Kaufblatt darüberlegt —,
+  danach nur, wenn er sich ändert.</li>
 </ul>
 
 <p>Ausdrücklich <strong>nicht</strong> übermittelt werden: Name, E-Mail-Adresse,
@@ -279,10 +315,10 @@ anderen Dienst sendet.</p>
 
 <p><strong>Zur IDFV.</strong> Die App schaltet RevenueCats automatische
 Erfassung von Gerätekennungen ab. Diese Einstellung wirkt nur auf die
-<strong>Attribute</strong>, die RevenueCat einem Kaufdatensatz für
-Werbe-Zurechnung anhängen würde; die Kopfzeile mit der IDFV setzt das SDK
-unabhängig davon bei jeder Anfrage. Abschalten liesse sie sich nur, indem man
-das SDK ersetzt. Die IDFV ist keine Werbe-Kennung, sie wird hier für nichts
+<strong>Gerätekennungen</strong>, die RevenueCat sonst als Attribute an den
+Kaufdatensatz hängen würde; den Tracking-Status legt das SDK trotzdem ab, und
+die Kopfzeile mit der IDFV setzt es unabhängig davon bei jeder Anfrage.
+Abschalten liesse sie sich nur, indem man das SDK ersetzt. Die IDFV ist keine Werbe-Kennung, sie wird hier für nichts
 ausgewertet und steht mit keiner Ihrer Buchungen in Verbindung — aber sie wird
 übertragen, und das gehört in diese Erklärung.</p>
 
@@ -293,11 +329,15 @@ ohne Netz weiss, dass Hero gekauft ist.</p>
   <li><strong>Zweck:</strong> Freischaltung und Wiederherstellung des gekauften
   Funktionsumfangs, Prüfung der Quittung gegen Missbrauch — und zusammengefasste
   Kaufstatistik im Dashboard von RevenueCat (wie viele Käufe, Wiederherstellungen
-  und Rückerstattungen). <strong>Keine Preisexperimente, keine Zielgruppen, keine
-  Werbe-Zurechnung:</strong> in RevenueCat ist nichts dergleichen eingerichtet.</li>
+  und Rückerstattungen). Deshalb steht im App-Datenschutz des App Store bei
+  allen drei Datentypen neben «App-Funktionalität» auch «Analyse»; RevenueCat
+  verlangt diese Angabe von jeder App, die den Dienst nutzt. <strong>Keine
+  Preisexperimente, keine Zielgruppen, keine Werbe-Zurechnung:</strong> in
+  RevenueCat ist nichts dergleichen eingerichtet. Würde es eingerichtet, wäre
+  dieser Zweck hier zu ergänzen, bevor es aktiv wird.</li>
   <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung
   des Kaufvertrags) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
-  der Prüfung der Quittung).</li>
+  der Prüfung der Quittung und an einer zusammengefassten Kaufstatistik).</li>
   <li><strong>Speicherdauer:</strong> «Hero» ist ein Einmalkauf ohne Ablauf. Der
   Eintrag bei RevenueCat besteht deshalb so lange, wie der Kauf gelten soll.</li>
   <li><strong>Drittland:</strong> RevenueCat, Inc. hat Sitz in den USA. Die
@@ -306,8 +346,7 @@ ohne Netz weiss, dass Hero gekauft ist.</p>
   <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</li>
 </ul>
 
-<p>Ohne konfigurierten Kaufdienst — etwa in einer Entwicklungsversion — findet
-kein einziger Netzaufruf statt.</p>
+<p>Ohne konfigurierten Kaufdienst findet kein einziger Netzaufruf statt.</p>
 
 <h2>5. Was die App nicht tut</h2>
 
@@ -354,11 +393,12 @@ Kategorie, jede Regel und jede Zuordnung lässt sich in der App ändern. Löschu
 einzelne Auszüge, der ganze Bestand oder die App samt Daten. Der Verantwortliche
 kann bei diesen Daten nichts tun, weil er sie nicht hat.</p>
 
-<p><strong>Für den Kauf</strong> liegt bei RevenueCat ein Datensatz, der aus
-einer anonymen Id und einer Quittung besteht. Er enthält keinen Namen und keine
-Adresse: der Verantwortliche kann Sie damit <strong>nicht identifizieren</strong>
-(Art. 11 Abs. 2 DSGVO). Wenn Sie zu diesem Datensatz Auskunft oder Löschung
-wünschen, brauchen wir etwas, womit er auffindbar ist — die Transaktions- oder
+<p><strong>Für den Kauf</strong> liegt bei RevenueCat ein Datensatz mit einer
+anonymen Id, der Quittung und dem Tracking-Status aus Abschnitt 4. Er enthält
+keinen Namen und keine Adresse: der Verantwortliche kann Sie damit
+<strong>nicht identifizieren</strong> (Art. 11 Abs. 2 DSGVO). Wenn Sie zu diesem
+Datensatz Auskunft oder Löschung wünschen, brauchen wir etwas, womit er
+auffindbar ist — die Transaktions- oder
 Bestell-Id aus Ihrer Rechnung von Apple genügt in der Regel. Schreiben Sie an
 die oben genannte Adresse; die Anfrage wird innert eines Monats beantwortet.
 Wird der Datensatz gelöscht, gilt der Kauf gegenüber der App nicht mehr als
@@ -391,7 +431,8 @@ Aufsichtsbehörde Ihres Wohnsitzes wenden.</p>
 <p>Die App richtet sich nicht an Kinder und ist im App Store mit 4+ eingestuft,
 weil sie keine für Kinder ungeeigneten Inhalte enthält — nicht, weil sie für
 Kinder gedacht wäre. Von Kindern werden wissentlich keine Daten erhoben — und
-über den Kauf (Abschnitt 4) hinaus von niemandem.</p>
+über den Kauf (Abschnitt 4) und Ihre E-Mails an den Support (Abschnitt 9)
+hinaus von niemandem.</p>
 
 <h2>8. Änderungen dieser Erklärung</h2>
 
@@ -399,10 +440,29 @@ Kinder gedacht wäre. Von Kindern werden wissentlich keine Daten erhoben — und
 Massgeblich ist die Fassung unter dieser Adresse; das Datum oben sagt, wann sie
 zuletzt geändert wurde.</p>
 
-<h2>9. Kontakt</h2>
+<h2>9. Kontakt und E-Mails an den Support</h2>
 
 <p>Fragen zum Datenschutz oder zur App:
 <a href="mailto:capederpas@gmail.com">capederpas@gmail.com</a></p>
+
+<p>Wenn Sie dorthin schreiben — auch mit dem Fehlerbericht oder dem
+Kurzbericht «Format melden» aus der App —, verarbeitet der Verantwortliche Ihre
+E-Mail-Adresse, den Inhalt der E-Mail und allfällige Anhänge, um die Anfrage zu
+beantworten. Die App schickt dabei nichts von sich aus: was in der E-Mail
+steht, bestimmen Sie.</p>
+
+<ul>
+  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, wenn die
+  Anfrage den Kauf betrifft, sonst Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+  Interesse, Anfragen zur App zu beantworten).</li>
+  <li><strong>Speicherdauer:</strong> Die E-Mails werden gelöscht, sobald die
+  Anfrage erledigt ist und keine Aufbewahrungspflicht entgegensteht.</li>
+  <li><strong>Anbieter des Postfachs:</strong> Das Postfach liegt bei Gmail;
+  betrieben wird es von Google (für den EWR und die Schweiz: Google Ireland
+  Limited), und Google kann die E-Mails auch ausserhalb von EWR und Schweiz,
+  etwa in den USA, verarbeiten. Datenschutzhinweise von Google:
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</li>
+</ul>
 
 <footer>
   <p>Kontoauszughero — Kontoauszüge lesen, ohne dass sie das Handy verlassen.</p>
